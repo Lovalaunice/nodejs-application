@@ -9,7 +9,7 @@ node{
  }
  stage("Build"){
  sh "echo creating build artifacts"
- nodejs(nodeJSInstallationName: 'nodejs20') {
+ nodejs(nodeJSInstallationName: 'nodejs16') {
         //sh "npm install"
     }
  }  
