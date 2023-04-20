@@ -3,6 +3,9 @@ node{
   sh "echo running nodejs-app"
    git 'https://github.com/Lovalaunice/nodejs-application.git'
  }
+ Stage('UnitTest'){
+ sh "npm test"
+ }
  stage("Build"){
  sh "echo creating build artifacts"
         sh "npm install"
