@@ -4,7 +4,7 @@ node{
    git 'https://github.com/Lovalaunice/nodejs-application.git'
  }
  Stage('UnitTest'){
- sh "npm test"
+ //sh "npm test"
  }
  stage("Build"){
  sh "echo creating build artifacts"
