@@ -8,6 +8,7 @@ node{
  }
  stage("Build"){
  sh "echo creating build artifacts"
+ nodejs(nodeJSInstallationName: 'nodejs17') {
         sh "npm install"
     }
  }  
